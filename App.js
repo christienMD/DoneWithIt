@@ -15,23 +15,12 @@ import {
   Dimensions,
 } from "react-native";
 import { useDeviceOrientation } from "@react-native-community/hooks";
+import WelcomeScreen from "./app/screens/WelcomeScreen";
 
 export default function App() {
   const orientation = useDeviceOrientation();
   // console.log(orientation);
   // console.log(Dimensions.get("screen"));
 
-  return (
-    <SafeAreaView style={styles.container}>
-      
-    </SafeAreaView>
-  );
+  return <WelcomeScreen />;
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
-  },
-});
