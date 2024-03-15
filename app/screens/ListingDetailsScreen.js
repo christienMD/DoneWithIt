@@ -1,8 +1,8 @@
 import React from "react";
 import { Image, View, StyleSheet } from "react-native";
-import AppText from "./AppText";
+import AppText from "../components/AppText";
 import colors from "../config/colors";
-import ListItem from "./ListItem";
+import ListItem from "../components/ListItem";
 
 function ListingDetailsScreen(props) {
   return (
@@ -37,14 +37,14 @@ const styles = StyleSheet.create({
     fontSize: 20,
     marginVertical: 10,
   },
-  
+
   title: {
     fontSize: 24,
     fontWeight: "500",
   },
   userContainer: {
-    marginVertical: 40
-  }
+    marginVertical: 40,
+  },
 });
 
 export default ListingDetailsScreen;
