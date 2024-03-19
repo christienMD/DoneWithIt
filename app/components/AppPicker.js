@@ -14,7 +14,7 @@ import AppText from "./AppText";
 import Screen from "./Screen";
 import PickerItem from "./PickerItem";
 
-function AppPicker({
+function AppFormPicker({
   icon,
   items,
   onSelectItem,
@@ -36,6 +36,12 @@ function AppPicker({
               style={styles.icon}
             />
           )}
+
+          {/* {selectedItem ? (
+            <AppText style={styles.text}>{selectedItem.label}</AppText>
+          ) : (
+            <AppText style={styles.placeholder}>{placeholder.label}</AppText>
+          )} */}
 
           <AppText style={styles.text}>
             {selectedItem ? selectedItem.label : placeholder}
@@ -87,4 +93,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default AppPicker;
+export default AppFormPicker;
